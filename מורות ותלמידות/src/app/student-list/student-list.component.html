@@ -1,0 +1,36 @@
+<ng-container *ngTemplateOutlet="beforeListStudent"></ng-container>
+@for(item of students; track item){
+<li>{{ item.Id }} {{ item.First_Name }}</li>
+<button (click)="show(item.Id)">עריכה</button>
+@if(selected==item.Id) {<app-student-details
+  [id]="selected"
+  [list]="students"
+  (saveStudent)="updateDetailesFather($event)"
+></app-student-details
+>} @if(selected==item.Id && item.Active == false){
+{{ item.Date }}
+} 
+@if(selected==item.Id && item.Ispay == true){
+  <app-course-student></app-course-student>
+}
+}
+<ng-container *ngTemplateOutlet="beforeListStudent"></ng-container>
+
+<br />
+
+<ng-template #beforeListStudent>
+  <p>-----------רשימת תלמידות--------------</p>
+</ng-template>
+
+<button (click)="add()">הוספה</button>
+@if(selected==-1){<app-student-details
+  [id]="0"
+  [list]="students"
+></app-student-details
+>}
+
+<app-student-details
+  [id]="0"
+  [list]="students"
+  (saveStudent)="saveDetailesFather($event)"
+></app-student-details>

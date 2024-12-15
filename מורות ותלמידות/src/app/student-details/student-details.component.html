@@ -1,0 +1,12 @@
+<input #Id type="number" name="id" placeholder="id">
+<input #firse_name  type="text" name="first_name" placeholder="first_name">
+<input #last_name  type="text" name="last_name" placeholder="last_name">
+<input #address type="text" name="address" placeholder="address">
+<input #active type="checkbox" name="active" placeholder="active">
+<input #avg type="number" name="avg" placeholder="avg">
+<input #date type="date" name="date" placeholder="date">
+<input #pay type="checkbox" name="Ispay" placeholder="pay">
+
+<b><app-inforomation></app-inforomation></b>
+<button (click)="saveDetailes(Id.value,firse_name.value,last_name.value,address.value,active.value,avg.value,date.value,pay.value)">save</button>   
+

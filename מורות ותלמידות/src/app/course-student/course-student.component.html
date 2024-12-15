@@ -1,0 +1,24 @@
+<div>
+    <label for="courses">Choose a course:</label>
+    <select id="courses" (change)="onOptionSelected($event)">
+      <option *ngFor="let course of courses" [value]="course.NameCourse">{{ course.NameCourse }}</option>
+    </select>
+  </div>
+  <div>
+    Selected course: 
+    @for(select of selectedOption;track select){
+        @if(select == "Accounting"){
+            <p DirectiveCourse [course]="color1">{{select}}</p>
+        }
+        @if(select == "software_engineering"){
+            <p DirectiveCourse [course]="color2">{{select}}</p>
+        }
+        @if(select == "graphics"){
+            <p DirectiveCourse [course]="color3">{{select}}</p>
+        }@if(select == "tax_consulting"){
+            <p DirectiveCourse [course]="color4">{{select}}</p>
+        }
+
+        
+    }
+  </div>

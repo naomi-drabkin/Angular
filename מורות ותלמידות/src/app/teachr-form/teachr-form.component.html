@@ -1,0 +1,29 @@
+<form (ngSubmit)="onSubmit()">
+  <label for="name">teacher:</label>
+  <input
+    #teachername="ngModel"
+    id="name"
+    placeholder="name"
+    [(ngModel)]="teacher.Name"
+    name="name"
+    required
+    minlength="3"
+  />
+  @if(teachername.hasError('minlength')){
+  <small>the name too short</small>
+  } @if(teachername.touched && teachername.hasError('required')){
+  <small>required</small>
+  }
+  <input
+    #allclass="ngModel"
+    id="classes"
+    placeholder="classes"
+    [(ngModel)]="teacher.Class"
+    name="classes"
+    required
+  />
+  @if(allclass.hasError('required')){
+  <small>required</small>
+  }
+  <button type="submit">submit</button>
+</form>

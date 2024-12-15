@@ -1,0 +1,27 @@
+<br>
+
+<br>
+
+@for(t of this.teachers; track $index){
+    <p>id {{t.ID}} , name- {{t.Name}},  classes {{t.Class}}</p>
+    <button (click)="updateTeacher(t)">update teacher</button>
+    <br>
+
+    @if(statusU == t.ID){
+        <app-teachr-form (close)="onClose($event)" [teacher]="teacher"></app-teachr-form>
+    }
+    
+    <button (click)="deleteTeacher(t)" >delete teacher</button>
+    <br>
+
+    @if(statusD == t.ID){
+        <app-teachr-form (close)="onClose($event)" [teacher]="teacher" [isDelete]="true"></app-teachr-form>
+    }
+}
+
+<button (click)="addTeacher()">Add teacher</button>
+@if(statusD == 5){
+<app-teachr-form (close)="onClose($event)" [isAdd]="true" [teacher]="teacher" [isEdit]="true"></app-teachr-form>
+}
+
+
