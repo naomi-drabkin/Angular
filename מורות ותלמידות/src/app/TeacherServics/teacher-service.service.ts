@@ -8,12 +8,9 @@ export class TeacherServiceService {
   static count: number = 0;
   TeacherServiceService: any;
   teachers:Teacher[]=[
-    // new Teacher("",-20,[]),
-    // new Teacher("",-30,[])
+    
   ];
-  // =[
-  //    new Teacher("",-1,[])
-  // ];
+ 
   update_teacher: Teacher;
 
   //constructor() { }

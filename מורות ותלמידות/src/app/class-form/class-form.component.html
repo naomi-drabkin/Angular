@@ -1,0 +1,52 @@
+
+<form [formGroup]="ClassForm" (ngSubmit)="Submit()">
+  <div class="ClassForm">
+        <label for="ID">ID:</label>
+        <input
+          class="form-control"
+          id="ID"
+          type="text"
+          formControlName="ID"
+          placeholder="Enter ID"
+          required
+        />
+      </div>
+      <br />
+      <div class="ClassForm">
+        <label for="level">level:</label>       
+        <input
+          class="form-control"
+          id="level"
+          type="text"
+          formControlName="level"
+          placeholder="Enter level"
+          required
+        />
+      </div>
+      <br />
+      <div class="ClassForm">
+        <label for="number">Number:</label>
+        <input
+          class="form-control"
+          id="number"
+          type="number"
+          formControlName="number"
+          placeholder="Enter number"
+          required
+        />
+      </div>
+      <br />
+      
+
+      <br/>
+  <button type="submit">Submit</button>
+  
+  <br />
+</form>
+
+@for (item of allClass; track item.ID) {
+  {{ item.level}}
+  {{ item.number}}
+  <br/>
+}
+<br/>

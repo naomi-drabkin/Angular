@@ -1,6 +1,8 @@
-
-{{whattime()}}
-{{title}}
-<app-student-list></app-student-list>
-<app-edit-teacher></app-edit-teacher>
-<app-ikon></app-ikon>
+<nav>
+  <a routerLink="/" routerLinkActive="active">Home </a>
+  <a routerLink="/Student_List" routerLinkActive="active">Student </a>
+  <a routerLink="/Course_Student" routerLinkActive="active">Course </a>
+  <a routerLink="/Teachr_Form" routerLinkActive="active">Teachers </a>
+  <a routerLink="/Ikons" routerLinkActive="active">Ikon </a>
+</nav>
+<router-outlet></router-outlet>
