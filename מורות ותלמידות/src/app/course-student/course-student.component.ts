@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
 import { Course } from '../models/Course';
 import { UserServiceService } from '../UseService/user-service.service';
 import { CommonModule } from '@angular/common';
@@ -33,3 +33,4 @@ export class CourseStudentComponent {
     console.log(this.selectedOption[CourseStudentComponent.index++]);
   }
 }
+

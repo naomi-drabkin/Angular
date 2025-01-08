@@ -3,9 +3,10 @@ import { courses } from "./enum_Course";
 export class Course{
 
     constructor(
-        public  IdCourse:Number,
+        public  IdCourse:String,
         public NameCourse:String,
-        public Subject:courses
-    
+        public Subject:courses,
+        public numSemster:String,
+        public Price:String,
     ){}
 }

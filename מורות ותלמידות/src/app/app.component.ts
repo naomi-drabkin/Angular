@@ -4,6 +4,8 @@ import { StudentListComponent } from './student-list/student-list.component';
 import{TeachrFormComponent}from './teachr-form/teachr-form.component'
 import { EditTeacherComponent } from "./edit-teacher/edit-teacher.component";
 import { IkonComponent } from "./ikon/ikon.component";
+// import {Component} from '@angular/core';
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @Component({
@@ -15,7 +17,8 @@ import { IkonComponent } from "./ikon/ikon.component";
     EditTeacherComponent, 
     IkonComponent,
     RouterLink, 
-    RouterLinkActive],
+    RouterLinkActive,
+    MatTabsModule],
   templateUrl: './app.component.html',
   // styleUrl: './app.component.css'
 })

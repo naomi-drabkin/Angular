@@ -1,0 +1,46 @@
+<p>the courses with above 2 semester color with pink</p>
+<p>software_engineering</p>
+<p [ngClass]="{ 'p-active': active }">Accounting</p>
+<p>graphics</p>
+<p [ngClass]="{ 'p-active': active }">tax_consulting</p>
+<button (click)="changeClass()">change class</button>
+
+<button mat-button [matMenuTriggerFor]="Course">Course</button>
+<mat-menu #Course="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="Accounting">Accounting</button>
+  <button mat-menu-item [matMenuTriggerFor]="software_engineering">
+    software engineering
+  </button>
+  <button mat-menu-item [matMenuTriggerFor]="graphics">graphics</button>
+  <button mat-menu-item [matMenuTriggerFor]="tax_consulting">
+    tax consulting
+  </button>
+</mat-menu>
+
+<!-- <mat-menu #vertebrates="matMenu">
+
+  @for(select of selectedOption;track select)
+  {
+        <button mat-menu-item [matMenuTriggerFor]="{select}">{{select}}</button>
+  }  
+</mat-menu> -->
+
+<mat-menu #Accounting="matMenu">
+  <button mat-menu-item>semester: 4</button>
+  <button mat-menu-item>price: 1500</button>
+</mat-menu>
+
+<mat-menu #software_engineering="matMenu">
+  <button mat-menu-item>semester: 2</button>
+  <button mat-menu-item>price: 1420</button>
+</mat-menu>
+
+<mat-menu #graphics="matMenu">
+  <button mat-menu-item>semester: 2</button>
+  <button mat-menu-item>price: 1000</button>
+</mat-menu>
+
+<mat-menu #tax_consulting="matMenu">
+  <button mat-menu-item>semester: 3</button>
+  <button mat-menu-item>price: 950</button>
+</mat-menu>
