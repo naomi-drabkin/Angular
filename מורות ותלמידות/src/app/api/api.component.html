@@ -1,8 +1,10 @@
 <p>api works!</p>
 
 @for(e of events ;track e.id){
+
     {{e | json}}
 }
 @empty {
     <div>loading...</div>
+    <div>for you----</div>
 }
