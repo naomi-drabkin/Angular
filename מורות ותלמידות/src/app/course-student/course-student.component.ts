@@ -1,8 +1,8 @@
 import { Component, ViewChild } from '@angular/core';
 import { Course } from '../models/Course';
-import { UserServiceService } from '../UseService/user-service.service';
 import { CommonModule } from '@angular/common';
 import {DirectiveCourseDirective} from '../directiveCourse/directive-course.directive'
+import { UserServiceService } from '../Services/UseService/user-service.service';
 
 @Component({
   selector: 'app-course-student',

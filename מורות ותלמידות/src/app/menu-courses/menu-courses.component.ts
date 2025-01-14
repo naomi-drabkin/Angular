@@ -3,8 +3,8 @@ import {Component} from '@angular/core';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { Course } from '../models/Course';
-import { UserServiceService } from '../UseService/user-service.service';
 import { CommonModule } from '@angular/common';
+import { UserServiceService } from '../Services/UseService/user-service.service';
 
 /**
  * @title Basic menu

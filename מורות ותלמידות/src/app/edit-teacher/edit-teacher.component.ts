@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
-import { TeacherServiceService } from '../TeacherServics/teacher-service.service';
 import { Teacher } from '../models/Teacher';
 import { TeachrFormComponent } from '../teachr-form/teachr-form.component';
+import { TeacherServiceService } from '../Services/TeacherServics/teacher-service.service';
 
 @Component({
   selector: 'app-edit-teacher',

@@ -14,7 +14,7 @@ import {
 } from '@angular/forms';
 import { Teacher } from '../models/Teacher';
 import { FormsModule } from '@angular/forms';
-import { TeacherServiceService } from '../TeacherServics/teacher-service.service';
+import { TeacherServiceService } from '../Services/TeacherServics/teacher-service.service';
 
 @Component({
   selector: 'app-teachr-form',

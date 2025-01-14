@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IkonComponent } from '../ikon/ikon.component';
-import { EditTeacherComponent } from '../edit-teacher/edit-teacher.component';
 import { StudentListComponent } from '../student-list/student-list.component';
 import { ClassFormComponent } from "../class-form/class-form.component";
+import { EditTeacherComponent } from '../edit-teacher/edit-teacher.component';
 
 @Component({
   selector: 'app-menu',

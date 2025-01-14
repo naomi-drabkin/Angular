@@ -6,6 +6,7 @@ import { TeachrFormComponent } from './teachr-form/teachr-form.component';
 import { IkonComponent } from './ikon/ikon.component';
 import { MenuComponent } from './menu/menu.component';
 import {  MenuOverviewExample } from './menu-courses/menu-courses.component';
+import { APIComponent } from './api/api.component';
 
 export const routes: Routes = [
     {path:'' , component: MenuComponent},
@@ -14,5 +15,6 @@ export const routes: Routes = [
     {path:'Teachr_Form',component:TeachrFormComponent},
     {path:'Ikons',component:IkonComponent},
     {path:'menuCourse',component:MenuOverviewExample},
+    {path:'apiService',component:APIComponent},
 
 ];

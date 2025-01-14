@@ -6,19 +6,23 @@ import { EditTeacherComponent } from "./edit-teacher/edit-teacher.component";
 import { IkonComponent } from "./ikon/ikon.component";
 // import {Component} from '@angular/core';
 import {MatTabsModule} from '@angular/material/tabs';
+import { APIComponent } from './api/api.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, 
-    StudentListComponent, 
-    TeachrFormComponent, 
-    EditTeacherComponent, 
-    IkonComponent,
+    // StudentListComponent, 
+    // TeachrFormComponent, 
+    // EditTeacherComponent, 
+    // IkonComponent,
     RouterLink, 
     RouterLinkActive,
-    MatTabsModule],
+    MatTabsModule,
+    APIComponent,
+    HttpClientModule],
   templateUrl: './app.component.html',
   // styleUrl: './app.component.css'
 })
