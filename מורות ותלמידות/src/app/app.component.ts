@@ -8,6 +8,7 @@ import { IkonComponent } from "./ikon/ikon.component";
 import {MatTabsModule} from '@angular/material/tabs';
 import { APIComponent } from './api/api.component';
 import { HttpClientModule } from '@angular/common/http';
+import { EnterSiteService } from './Services/enter web site/enter-site.service';
 
 
 @Component({
@@ -28,5 +29,6 @@ import { HttpClientModule } from '@angular/common/http';
 })
 export class AppComponent {
  
+  constructor(public enterSite:EnterSiteService){};
 }
 
