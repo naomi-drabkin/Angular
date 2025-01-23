@@ -1,0 +1,31 @@
+<p>users works!</p>
+<div>
+    <h1>welcome!!</h1>
+    <button (click)="LogOut()">Log Out</button>
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            @for (item of users; track item)
+            {<tr>
+                <td>
+                    {{ item.ID }}
+
+                </td>
+                <td>
+                    <a [routerLink]="['/allUsers',item.ID]">{{ item.Name }}</a>
+                </td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
